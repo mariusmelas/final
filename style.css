@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color:var(--bakgrunn);
+    background-image:linear-gradient(var(--bakgrunn),#f5ded7);
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -24,13 +24,10 @@ body {
     padding: 2rem;
 }
 main {
-    width: 80%;
     margin-bottom: 10rem;
-
 }
 
-article {
-}
+
 
 /*Hele Nav */
 .nav-liste{
@@ -71,7 +68,6 @@ nav > ul > li {
 h1 {
     color: #232323;
     font-size: 6rem;
-    text-align: center;
     text-decoration: underline;
 
 }
@@ -87,10 +83,11 @@ p {
 }
 
 .welcome-text {
-    margin-left: 4rem;
 
     font-size: 2rem;
     max-width: 70ch;
+    line-height: 3rem;
+
 }
 
 
