@@ -4,18 +4,31 @@
     --navfarge:#E7D2CC;
     --textfarge-primary:#23232e;
     --textfarge-secondary:#868B8E;
+    --quote: #dbbdb3;
 }
 /*Smooth scroll */
 * {
     scroll-behavior: smooth;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
 /*Hele Body */
 body {
-    background-image:linear-gradient(var(--bakgrunn),#f5ded7);
+    background-image:linear-gradient(var(--bakgrunn) 50%,#f5ded7);
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*Hele Dokumentet */
+
+.background {
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#dbbdb3,var(--quote), var(--bakgrunn)); 
+    width: 100vw;
+    height: 1000px;
+    
+}
 .main-container {
     width: 70%;
     margin: 0 auto;
@@ -31,7 +44,7 @@ main {
 .nav-liste{
     margin: 0;
     padding: 1rem;
-    margin-bottom: 10rem;
+   margin-bottom:10rem;
     justify-content: flex-end;
     display: flex;
     justify-content: space-around;
@@ -65,16 +78,24 @@ nav > ul > li {
 
 /*Header 1 */
 h1 {
+    text-align: center;
     font-family: monospace;
     color: #232323;
-    font-size: 5rem;
-    text-decoration: underline;
+    font-size: 25rem;
     margin-bottom: 4rem;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
+h2{
+    font-size: 2rem;
 }
 /*Paragraf (Text)*/
 p {
     font-size: 1.5rem;
     max-width: 70ch;
+    line-height: 30px;
 }
 /*Velkommen tekst */
 .welcome-text {
@@ -85,7 +106,8 @@ p {
 }
 
 #our-courses-title{
-    transition: ease;
+    font-weight: 500;
+    font-size: 44px;
 }
 /*
 
@@ -109,9 +131,8 @@ p {
     
     
     */
-    grid-gap: 1rem;
-
-    margin-bottom: 4rem;
+    grid-gap: 2.5rem;
+    margin-bottom: 3rem;
     
 }
 
@@ -185,10 +206,6 @@ p {
   SLUTT! Grid på framside med fag
 */
 
-.info-main h2{
-    font-size: 2rem;
-}
-
 .info-main p {
     font-size: 1.2rem;
 }
@@ -227,6 +244,21 @@ p {
     width: 100%;
 }
 
+blockquote {
+    background: var(--navfarge);
+    display: inline-block;
+    font-size: 35px;
+    color: #3d3d41;
+    margin-left: 0;
+    border-left: 10px solid var(--quote);
+    font-style: italic;
+    padding: 1rem;
+    width: 70%;
+}
+
+.reflection section{
+    margin-bottom: 50px;
+}
 
 @media screen and (max-width:1100px) {
 
