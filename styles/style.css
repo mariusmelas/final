@@ -16,40 +16,43 @@
 
 body {
   background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
-  margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
 
-nav,
-main {
   width: 70%;
   margin: 0 auto;
 }
+
+
 main {
-  padding: 2rem;
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
-.nav-list {
-  margin: 0;
-  padding: 1rem;
-  margin-bottom: 10rem;
-  justify-content: flex-end;
+
+header {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
 }
+
+header #logo {
+    width: 120px;
+    margin-right: 2rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-item {
   display: inline-block;
-
-  margin-right: 2rem;
+  margin-right: 1rem;
   align-self: center;
 }
-/* logo */
-.nav-item:first-child {
-  margin-right: auto;
-}
-/*Nav-Text */
+
+
 .nav-item a {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
@@ -62,6 +65,11 @@ nav a:hover {
   color: var(--textfarge-secondary);
 }
 
+.menu-small-screen {
+    visibility: hidden;
+}
+
+
 h1 {
   font-family: monospace;
   color: #232323;
@@ -72,13 +80,17 @@ h1 {
 
 
     */
-  font-size: 5rem;
-  margin-bottom: 4rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
   z-index: -1;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 154, 243);
+  text-underline-offset: 0.5rem;
 }
 
 h2 {
   font-size: 2rem;
+
 }
 
 p {
@@ -91,6 +103,7 @@ p {
   max-width: 70ch;
   line-height: 3rem;
   margin-bottom: 15rem;
+  
 }
 
 @media screen and (max-width: 1100px) {
@@ -101,34 +114,37 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .main-container {
+
+  body {
     width: 90%;
   }
 
-  .grid-test {
+    
+  header {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header #logo {
+    width: 70px;
+    align-self: start;
+}
+.nav-list {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+  .information-cards-container {
     grid-template-columns: none;
   }
 
-  nav > ul {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-  nav {
-    padding: 1rem;
-  }
-  nav a {
-    font-size: 1.4rem;
-  }
-
   p {
-    margin-left: 0;
     font-size: 1.2rem;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-  h2 {
-    margin-left: 0;
-  }
+
 }

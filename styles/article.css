@@ -2,14 +2,12 @@
 .article-intro {
     display: grid;
     grid-template-columns: 40% 1fr;
+    grid-gap: 2rem;
     margin: 4rem 0;
+
 }
 
-.text-article figure {
-    align-self: center;
-    width: 100%;
-    
-}
+
 
 .text-article blockquote {
 
@@ -43,13 +41,20 @@
 
 
 .article-intro > p {
-   /* align-self: center; */
+    align-self: center; 
     font-size: 1.5rem;
     line-height: 2rem;
     font-style: italic;
 }
 
-.article-figure > img {
+.article-intro > figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    align-self: center;
+    
+}
+
+.article-intro > figure > img {
     align-self: flex-start;
     width: 100%;
 }
