@@ -1,0 +1,55 @@
+
+.article-intro {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    margin: 4rem 0;
+}
+
+.text-article figure {
+    align-self: center;
+    width: 100%;
+    
+}
+
+.text-article blockquote {
+
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 70%;
+    background: var(--navfarge);
+    color: #3d3d41;
+    font-size: 2rem;
+    border-left: 10px solid var(--quote);
+    font-style: italic;
+  
+}
+
+.text-article h2 {
+    margin-top: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+.text-article a {
+    color: var(--textfarge-primary);
+    text-decoration: none;
+}
+
+.text-article a:hover {
+    color: var(--navfarge);
+}
+
+
+
+
+.article-intro > p {
+   /* align-self: center; */
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+.article-figure > img {
+    align-self: flex-start;
+    width: 100%;
+}

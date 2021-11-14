@@ -1,0 +1,85 @@
+
+#our-courses-title{
+    font-weight: 500;
+    font-size: 44px;
+}
+/*
+
+    Grid på framside med Preview av text
+
+*/
+
+.information-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;
+    
+    
+    */
+    grid-gap: 2.5rem;
+    margin-bottom: 3rem;
+    
+}
+
+.information-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    padding: 2rem;
+    justify-items: center;
+    min-height: 300px;
+    justify-content: space-around;
+    background-color: #e7d2cc;
+    color: --var(--textfarge-primary);
+
+}
+
+#our-courses-title {
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+.information-card > svg {
+    background-color: #232323;
+    padding: 1rem;
+    color: var(--navfarge);
+    position: absolute;
+    width: 50px;
+    top: -40px;
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+.information-card > p {
+
+    font-size: 1rem;
+
+}
+.information-card > h3 {
+    align-self: center;
+}
+.information-card > a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: var(--textfarge-primary);
+    color:#EEEDE7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-self: center;
+    width: 90%;
+    text-align: center;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+}
+.information-card > a:hover{
+    opacity: 1.0;
+    transition: opacity .15s ease-in-out;
+    
+}
