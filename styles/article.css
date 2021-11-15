@@ -7,21 +7,40 @@
 
 }
 
-
-
 .text-article blockquote {
-
     display: inline-block;
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 70%;
-    background: var(--navfarge);
+    margin: 1.5rem 10px;
+    padding: 0.5em 10px;
     color: #3d3d41;
+    background: var(--navfarge);
     font-size: 2rem;
     border-left: 10px solid var(--quote);
     font-style: italic;
-  
+    quotes: "\201C""\201D""\2018""\2019";
+    max-width: 690px;
 }
+
+blockquote p {
+    display: inline;
+    font-size: 30px;
+}
+
+blockquote::before {
+    color: var(--quote);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+}
+/*
+blockquote::after {
+    color: var(--quote);
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}*/
 
 .text-article h2 {
     margin-top: 4rem;
