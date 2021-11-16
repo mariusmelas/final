@@ -34,6 +34,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 main {
+  background-image:url(img/road.jpg);
   min-height: 100vh;
   margin-bottom: 10rem;
 }
@@ -130,6 +131,15 @@ p {
 .essay-img:not(:first-of-type) {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1100px) {
