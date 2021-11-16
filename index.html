@@ -17,35 +17,31 @@
   </head>
 
   <body>
-    <video autoplay muted loop id="video">
-      <source src="media/Mountain.mp4" type="video/mp4">
-    </video>
     <header>
         <nav>
           <a href="index.html"><img id="logo" src="img/logo.svg" /></a>
           <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="essay.html">Essay</a></li>
-            <li class="nav-item">
-              <a href="accessibility.html">Accessibility</a>
-            </li>
+            <li class="nav-item"><a href="accessibility.html">Accessibility</a></li>
             <li class="nav-item"><a href="info.html">Info</a></li>
             <li class="nav-item"><a href="fun.html">Fun</a></li>
           </ul>
         </nav>
     
     </header>
-
-    <main>
-      <article>
+      <div class="wrapper">
+        <video autoplay muted loop id="video" src="media/Mountain.mp4" type="video/mp4">
+        </video>    
+        <div class="wrapper-text">
         <h1>Hello World</h1>
         <p class="welcome-text">
-          We are a group of four first-year coumputer engineer students at
-          <a href="https://www.oslomet.no/"> OsloMet</a>. This website is our final
+          We are a group of four first-year coumputer engineer students at OsloMet. This website is our final
           assignment in the course DATA 1200 Inclusive Web Design.
         </p>
-      </article>
-
+        </div>
+      </div>
+    <main>
       <article class="our-courses">
         <h2 id="our-courses-title">About our assignment:</h2>
         <div class="information-cards-container">
