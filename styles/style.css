@@ -5,6 +5,8 @@
   --textfarge-primary: #23232e;
   --textfarge-secondary: #868b8e;
   --quote: #dbbdb3;
+  --link: #3e55b9;
+  --linkvisited: #b31818;
 }
 
 * {
@@ -20,7 +22,16 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+body::-webkit-scrollbar{
+  width: 12px;
+}
 
+body::-webkit-scrollbar-track{
+  background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
+}
+body::-webkit-scrollbar-thumb{
+  background:var(--textfarge-primary);
+}
 
 main {
   min-height: 100vh;
@@ -28,7 +39,7 @@ main {
 }
 
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,6 +104,7 @@ p {
   font-size: 1.3rem;
   max-width: 70ch;
   line-height: 30px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -111,6 +123,8 @@ p {
 .essay-img img{
   width: 100%;
   max-width: 720px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .essay-img:not(:first-of-type) {

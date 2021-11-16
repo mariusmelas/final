@@ -32,15 +32,6 @@ blockquote::before {
     line-height: 0.1em;
     vertical-align: -0.4em;
 }
-/*
-blockquote::after {
-    color: var(--quote);
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-}*/
 
 .text-article h2 {
     margin-top: 4rem;
@@ -48,15 +39,17 @@ blockquote::after {
 }
 
 .text-article a {
-    color: var(--textfarge-primary);
+    color: var(--link);
     text-decoration: none;
+}
+
+.text-article a:visited {
+    color: var(--linkvisited);
 }
 
 .text-article a:hover {
     color: var(--navfarge);
 }
-
-
 
 
 .article-intro > p {
