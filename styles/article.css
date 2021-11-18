@@ -16,7 +16,6 @@
     font-size: 2rem;
     border-left: 10px solid var(--quote);
     font-style: italic;
-    quotes: "\201C""\201D""\2018""\2019";
     max-width: 690px;
 }
 

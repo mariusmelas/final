@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
     <title>Data</title>
+    <style>
+      img {
+        width: 50%;
+        border: 2px solid black;
+      }
+      </style>
   </head>
 
   <body>
@@ -35,7 +41,9 @@
     </header>
     <main>
       <article clas="text-article">
+
         <h1>Accessibility</h1>
+
         <h2>Inclusive design</h2>
         <p>
           We have been thinking about accessibility throughout the process of
@@ -44,15 +52,17 @@
           avoiding unnecessary and distracting elements. Following conventions
           for how elements are placed, like putting the main menu in the top.
         </p>
-        <h3>Small screens</h3>
 
+        <h3>Different screens</h3>
         <p>
-          Because of the layouts simplicity, it has been quite easy to make the
-          webpage work for all screen sizes. For smaller screens all elements
-          are placed in one column. Font sizes and margin have beed adjusted.
-          The links in the main menu has been made bigger, so it is easier when
-          cliked with finger, rather than a mouse pointer
+
+          By using relatived sized elements, the site is responsive and works well
+          on different screen resolutions. When the width get below 700px, we use 
+          media queries to change the layout. Font sizes and margins is adjusted and
+          the links in the main menu, is made bigger so it is easier to navigate with 
+          a finger, rather than a mouse pointer.
         </p>
+
         <h3>Colors</h3>
         <p>
           Setting up a color-palette with CSS variables has made it simpler to
@@ -60,6 +70,7 @@
           trying out different variants. We are making sure that the contrasts
           is good.
         </p>
+
         <h3>Coherent design</h3>
         <p>
           It's important that the whole page fits together, that the users
@@ -69,9 +80,11 @@
         </p>
 
         <h2>Coding choices</h2>
+
         <h3>Readability</h3>
         <p>Naming elements with descriptive names</p>
         <p>Trying to making the html structure as simple as possible</p>
+
         <h3>Re-use code</h3>
         <p>
           The header element, has been used on every page. This page, the essay
@@ -80,6 +93,7 @@
           these articles will be the same, even if they have some unique
           elements within the &lt;article&gt;-element
         </p>
+
         <pre>
         <code>
 &lt;header&gt;
@@ -98,22 +112,27 @@
         </code>
       </pre>
 
-        <h3>Working as a group</h3>
-        <p>
-          As we are multiple people working at the page, the code can become
-          messy, so it has been important to do some cleanup after a
-          worksession. Making sure that for example the same element is not
-          styled multiple times.
+
+       <h3>Sticky navigation bar</h3>
+       <p>
+        The site should be useable, even if the user <a href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target="_blank">needs to zoom.</a>
+        We wanted to have the navigation sticked to the top of the window, but as this broke the usability of page while zooming, we chosed not to.
+
         </p>
-        <h2>Automated Testing</h2>
+        <img src="img/accessibility-sticky-problem.png">
+
+
+       <h2>Automated Testing</h2>
 
         We have been using the automated test multiple times through the
         process, so we have not get to many errors each time.
 
         <h3>Achecker</h3>
         <p>Using Achecker</p>
+
         <h3>HTML Validator</h3>
         <p>Using html validator</p>
+
         <h3>CSS Validator</h3>
         <p>Using html validator</p>
       </article>
