@@ -1,4 +1,8 @@
 
+.text-article {
+    width: 70%;
+}
+
 .article-intro {
     display: grid;
     grid-template-columns: 40% 1fr;

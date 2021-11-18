@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --codegreen: rgb(58,190,68);
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-rows: 50px 50px 1fr 50px;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #first {
+
+        background-color: #111111;
+        color: var(--codegreen);
+       
+        justify-content: center;
+
+
+    }
+
+    .date {
+
+       
+    }
+
+    .turn-text {
+        grid-row-start: 3;
+        grid-column-start:1;
+        align-self: center;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+    }
+    .title {
+
+        grid-row-start: 2;
+        grid-column-start: 2;
+        justify-self: center;
+        font-weight: bold;
+    }
+    .title-hex {
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        grid-row-start: 3;
+        grid-column-start: 3;
+        justify-self: center;
+        align-self: center;
+        font-weight: bold;
+}
+
+    .content {
+        display: flex;
+        padding: 5rem;
+        justify-self: start;
+        align-self: center;
+        width: 90%;
+        grid-row-start: 3;
+        grid-column-start:2;
+    }
+    figure {
+        width: 50%;
+    }
+
+    .content p {
+        width: 100%;
+        color: lightgrey;
+        font-size: 1.2rem;
+        max-width: 50ch;
+    }
+
+    .content img {
+        width: 100%;
+     
+       
+    }
+    .green-text {
+        color: var(--codegreen);
+    }
+    .deco-box {
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+        justify-self: center;
+        align-self: center;
+        background-color:grey;
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    .deco-box:nth-of-type(2) {
+
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    #second {
+        background-color: #303030;
+        background-image: url("/img/WorldWideWeb.png");
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var(--codegreen);
+
+    }
+    #second > .content p {
+        align-self: center;
+        color:  white;
+        max-width: 80ch;
+        font-size: 2rem;
+    }
+
+  
+
+    nav {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--codegreen);
+    }
+
+
+
+    #third {
+        background-color: #111111;
+        color: var(--codegreen);
+    }
+    
+    #third img {
+        width: 100%;
+    }
+</style>
+<body>
+    <nav>
+      <a href="/index.html">I Hate computer stuff, TAKE ME BACK!</a>
+    </nav>
+
+    <section id="first">
+        <div class="deco-box"></div>
+        <div class="deco-box"></div>
+
+        <div class="turn-text"><p class="date">Time: 1940</p></div>
+        <p class="title">First computer</p>
+        <p class="title-hex">0x466972737420636f6d7075746572</p>
+        <div class="content">
+            <figure id="section2">
+                <img src="img/eniac.jpg">
+            <figcaption>A technician changes a tube. Caption reads "Replacing a bad tube meant checking among ENIAC's 19,000 possibilities." Center: Possibly John Holberton</figcaption>
+            </figure>
+            <p>
+                <span class="green-text">Charles Babbage</span>, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century. After working on his revolutionary difference engine, designed to aid in navigational calculations, in 1833 he realized that a much more general design, an Analytical Engine, was possible. The input of programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. For output, the machine would have a printer, a curve plotter and a bell. The machine would also be able to punch numbers onto cards to be read in later. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer that could be described in modern terms as Turing-complete.
+            </p>
+        </div>
+    </section>
+    <section id="second">
+        <div class="deco-box"></div>
+        <div class="deco-box"></div>
+
+        <div class="turn-text"><p class="date">Invented: 1989</p></div>
+        <p class="title">World Wide Web</p>
+        <p class="title-hex">0x466972737420636f6d7075746572</p>
+        <div class="content">
+            <p>
+                The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.            </p>
+        </div>
+    </section>
+    
+    <section id="third">
+        <div class="deco-box"></div>
+        <div class="deco-box"></div>
+
+        <div class="turn-text"><p class="date">Increased computational power over time</p></div>
+
+        <div class="content">
+        <p>
+            <img src="img/graph.png" alt="A graph of the increase of computational power over time">
+        </p>
+        </div>
+    </section>
+</body>
+</html>

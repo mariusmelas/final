@@ -72,8 +72,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bakgrunn);
-/* margin-top: 1rem; */
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -100,17 +99,24 @@ header #logo {
   align-self: center;
 }
 
+.nav-active {
+  color: rgb(0,154,243) !important;
+}
+
 .nav-item a {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: var(--textfarge-primary);
   text-decoration: none;
+  padding: 10px;
 }
 
 nav a:hover {
   color: var(--textfarge-secondary);
 }
+
+
 
 .menu-small-screen {
     visibility: hidden;
@@ -130,6 +136,8 @@ h1 {
   text-decoration: underline;
   text-decoration-color: rgb(0, 154, 243);
   text-underline-offset: 0.5rem;
+  text-align: center;
+
 }
 
 h2 {
@@ -189,7 +197,22 @@ p {
 
 @media screen and (max-width: 700px) {
 
+
+  .text-article {
+    width: 95%;
+  }
+  .wrapper {
+    margin-top: 0;
+    background-image: none;
+    background-image: url("/img/coworkers2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  
+  }
+
   #welcome {
+    width: 95%;
     font-size: 2rem;
     line-height: 2.5rem;
    /* margin-top: 4rem;*/
@@ -197,18 +220,30 @@ p {
   header {
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 3rem;
   }
 
 header #logo {
     width: 70px;
     align-self: start;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .nav-list {
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
+.nav-item {
+  margin: 0;
+}
+
+nav {
+  flex-direction: column;
+}
 
   .information-cards-container {
     grid-template-columns: none;
