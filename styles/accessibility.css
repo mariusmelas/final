@@ -1,15 +1,9 @@
-body {
-    background-color: blue;
-}
-
-.show-code {
-    font-family: monospace;
+pre code {
     display: inline-block;
-    margin: 1.5rem 10px;
-    padding: 0.5em 10px;
+    padding: 1rem;
+    
     color: #3d3d41;
-    background: blue;
-    font-size: 2rem;
-    border-left: 10px solid var(--quote);
+    background: var(--navfarge);
 
+    border-left: 10px solid var(--quote);
 }
