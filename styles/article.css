@@ -1,23 +1,38 @@
-
+/* ===========================================================
+   Style main content of pages
+   ===========================================================*/
 .text-article {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80%;*/
-   /* width: 95%;
-    max-width: 46rem;*/
-    width: 60%;
+    width: 95%;
     max-width: 46rem;
     margin: 0 auto 5rem;
 }
-.article-intro {
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    grid-gap: 2rem;
-    margin: 4rem 0;
 
+.text-article img{
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
+.text-article h2 {
+    margin-top: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+.text-article a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.text-article a:visited {
+    color: var(--linkvisited);
+}
+
+.text-article a:hover {
+    color: var(--navfarge);
+}
+
+/* ============================================================
+    Style quotes
+   ============================================================*/
 .text-article blockquote {
     display: inline-block;
     margin: 2rem 2rem;
@@ -43,24 +58,16 @@ blockquote::before {
     vertical-align: -0.4em;
 }
 
-.text-article h2 {
-    margin-top: 4rem;
-    margin-bottom: 1.2rem;
-}
+/* =========================================================================
+   This section styles the paragraph with a picture on the Info page
+   =========================================================================*/
+.article-intro {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 2rem;
+    margin: 4rem 0;
 
-.text-article a {
-    color: var(--link);
-    text-decoration: none;
 }
-
-.text-article a:visited {
-    color: var(--linkvisited);
-}
-
-.text-article a:hover {
-    color: var(--navfarge);
-}
-
 
 .article-intro > p {
     align-self: center; 
@@ -80,26 +87,18 @@ blockquote::before {
     align-self: flex-start;
     width: 100%;
 }
-body::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
-  }
-  body::-webkit-scrollbar-thumb {
-    background:var(--textfarge-primary);
-  }
 
+/*Style screens smaller than 1100px*/
+@media screen and (max-width: 1100px) {
 
-
-  @media screen and (max-width: 1100px) {
+    /*Places the picture below the paragraph on screens smaller than 1100px*/
     .article-intro {
       display: grid;
       grid-template-columns: none;
     }
-  }
+}
 
+/*Style screens smaller than 700px*/
 @media screen and (max-width: 700px) {
   
     .text-article {

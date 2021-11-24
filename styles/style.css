@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   z-index: 1;
 }
+
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -32,6 +33,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
 }
+
 body::-webkit-scrollbar-thumb {
   background:var(--textfarge-primary);
 }
@@ -44,7 +46,9 @@ main {
   min-height: 100vh;
 }
 
-
+/* =======================================================
+   Styles navigation bar
+   =======================================================*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,7 @@ nav {
 header {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 16rem;
+  margin-bottom: 4rem;
   padding: 1rem 0;
 }
 
@@ -69,12 +73,15 @@ header #logo {
   justify-content: space-between;
 }
 
+/* Styles navigation menu links 
+   =======================================================*/
 .nav-item {
   display: inline-block;
   margin-right: 1rem;
   align-self: center;
 }
 
+/*Styles link for the page the user is on*/
 .nav-active {
   color: rgb(0,154,243) !important;
 }
@@ -92,8 +99,9 @@ nav a:hover {
   color: var(--textfarge-secondary);
 }
 
-
-
+/* ========================================================
+   Styles headers and paragraphs
+   ========================================================*/
 h1 {
   font-family: monospace;
   color: #232323;
@@ -119,72 +127,44 @@ p {
   margin-bottom: 1rem;
 }
 
-
-.text-article img{
-  width: 100%;
-  /*
-  margin-top: 15px;
-  margin-bottom: 15px;
-  */
-  margin-bottom: 2rem;
+/* ==============================================================
+   Styles welcome section on the main page
+   ==============================================================*/
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 2rem;
+  margin-bottom: 10rem;
 }
 
-/*
-.text-article > h2 {
-  align-self: flex-start;
+.welcome-section img {
+  width: 70%;
 }
 
-.essay-img:not(:first-of-type) {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}*/
+#welcome-text {
+  font-size: 2rem;
+  margin-top: 4rem;
+  width: 70%;
+  margin: 0 auto;
+}
 
+/*Sets a border around picture on Accessibility page*/
+.a-img {
+  width: 50%;
+  border: 2px solid black;
+}
 
-
-
-
-
+/* ==============================================================
+   Styles screens smaller than 700px
+   ==============================================================*/
 @media screen and (max-width: 700px) {
+
+  /*Replaces background picture with a cropped version*/
   body {
-    background-image: url("/img/bkgd-small.png");
+    background-image: url("../img/bkgd-small.png");
     background-size: 700px auto;
   }
-
- 
- 
-
-  header {
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-
-header #logo {
-    width: 70px;
-    align-self: start;
-    margin: 0;
-    margin-bottom: 1rem;
-}
-
-.nav-list {
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-item {
-  margin: 0;
-}
-
-.essay-img img{
-  max-width: 100%;
-}
-
-nav {
-  flex-direction: column;
-}
-
 
   p {
     font-size: 1.2rem;
@@ -194,4 +174,42 @@ nav {
     font-size: 3rem;
   }
 
+  /*Changes navigation bar to be displayed in a single column*/
+  header {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  header #logo {
+    width: 70px;
+    align-self: start;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  nav {
+  flex-direction: column;
+  }
+
+  /*Styles welcome section for smaller screens*/
+  #welcome {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .welcome-section img {
+    width: 90%;
+  }
 }
