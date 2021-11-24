@@ -1,11 +1,11 @@
 :root {
-  --bakgrunn: #eeede7;
-  --boxfarge: #b9b7bd;
-  --navfarge: #e7d2cc;
-  --textfarge-primary: #23232e;
-  --textfarge-secondary: #868b8e;
-  --quote: #dbbdb3;
-  --link: #3e55b9;
+  --background: #eeede7;
+  /*--boxfarge: #b9b7bd;*/
+  --dark-color: #23232e;
+  --light-grey: #868b8e;
+  --pink: #dbbdb3;
+  --pink-light: #e7d2cc;
+  --blue: #3e55b9;
   --linkvisited: #b31818;
 }
 
@@ -20,10 +20,9 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
   margin: 0 auto;
   background-image: url("../img/background.png");
-  background-color: var(--bakgrunn);
+  background-color: var(--background);
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 body::-webkit-scrollbar {
@@ -31,11 +30,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
+  background-image: linear-gradient(var(--background) 50%, #f5ded7);
 }
 
 body::-webkit-scrollbar-thumb {
-  background:var(--textfarge-primary);
+  background:var(--dark-color);
 }
 
 main {
@@ -43,7 +42,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* =======================================================
@@ -53,7 +51,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  width: 95%;
+  margin: 0 auto;
 }
 
 header {
@@ -64,8 +63,7 @@ header {
 }
 
 header #logo {
-    width: 90px;
-    margin-left: 1rem;
+    width: 70px;
 }
 
 .nav-list {
@@ -90,13 +88,13 @@ header #logo {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: var(--textfarge-primary);
+  color: var(--dark-color);
   text-decoration: none;
   padding: 0.5rem;
 }
 
 nav a:hover {
-  color: var(--textfarge-secondary);
+  color: var(--light-grey);
 }
 
 /* ========================================================
@@ -104,10 +102,9 @@ nav a:hover {
    ========================================================*/
 h1 {
   font-family: monospace;
-  color: #232323;
+  color: var(--dark-color);
   font-size: 4rem;
   margin-bottom: 2rem;
-  z-index: -1;
   text-decoration: underline;
   text-decoration-color: #365465ff;
   text-underline-offset: 0.5rem;

@@ -18,7 +18,7 @@
 }
 
 .text-article a {
-    color: var(--link);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .text-article a:hover {
-    color: var(--navfarge);
+    color: var(--grey);
 }
 
 /* ============================================================
@@ -38,9 +38,9 @@
     margin: 2rem 2rem;
     padding: 2rem 2rem;
     color: #3d3d41;
-    background: var(--navfarge);
+    background: var(--pink-light);
     font-size: 2rem;
-    border-left: 0.5rem solid var(--quote);
+    border-left: 0.5rem solid var(--pink);
     font-style: italic;
     max-width: 100%;
 }
@@ -51,7 +51,7 @@ blockquote p {
 }
 
 blockquote::before {
-    color: var(--quote);
+    color: var(--pink);
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
@@ -66,7 +66,6 @@ blockquote::before {
     grid-template-columns: 40% 1fr;
     grid-gap: 2rem;
     margin: 4rem 0;
-
 }
 
 .article-intro > p {
@@ -88,7 +87,19 @@ blockquote::before {
     width: 100%;
 }
 
-/*Style screens smaller than 1100px*/
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background-image: linear-gradient(var(--background) 50%, #f5ded7);
+}
+
+body::-webkit-scrollbar-thumb {
+    background:var(--dark-color);
+}
+
+
 @media screen and (max-width: 1100px) {
 
     /*Places the picture below the paragraph on screens smaller than 1100px*/
@@ -98,7 +109,6 @@ blockquote::before {
     }
 }
 
-/*Style screens smaller than 700px*/
 @media screen and (max-width: 700px) {
   
     .text-article {

@@ -3,8 +3,8 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
+    background-image: linear-gradient(var(--background) 50%, #f5ded7);
   }
   body::-webkit-scrollbar-thumb {
-    background:var(--textfarge-primary);
+    background:var(--dark-color);
   }
