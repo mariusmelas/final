@@ -23,6 +23,7 @@ body {
   background-color: var(--bakgrunn);
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -116,19 +117,16 @@ h3 {
 p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  max-width: 70ch;
 }
 
 
 .text-article img{
-/*  display: block;
-  max-width: 80%;
-  */
-  width: 70%;
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
+/*
 .text-article > h2 {
   align-self: flex-start;
 }
@@ -136,7 +134,7 @@ p {
 .essay-img:not(:first-of-type) {
   margin-top: 20px;
   margin-bottom: 20px;
-}
+}*/
 
 
 

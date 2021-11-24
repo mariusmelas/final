@@ -30,7 +30,6 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.5rem;
     margin-bottom: 3rem;
-    
 }
 
 .information-card {
@@ -44,7 +43,7 @@
     justify-items: center;
     min-height: 300px;
     justify-content: space-around;
-    background-color:#E9DDD4;
+    background-color:#365465ff;
     color: --var(--textfarge-primary);
 
 }
@@ -119,6 +118,7 @@
         transform: translateX(0);
     }
 }
+
 
 @media screen and (max-width: 700px) {
 
