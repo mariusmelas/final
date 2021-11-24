@@ -43,8 +43,8 @@
     justify-items: center;
     min-height: 300px;
     justify-content: space-around;
-    background-color:#365465ff;
-    color: --var(--textfarge-primary);
+    background-color:#c8b7a6;
+    opacity: 1;
 
 }
 
@@ -54,9 +54,9 @@
 
 }
 .information-card > svg {
-    background-color: #232323;
+    background-color:#dbbdb3 ;
     padding: 1rem;
-    color: var(--navfarge);
+    color: black;
     position: absolute;
     width: 50px;
     top: -40px;

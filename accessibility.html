@@ -119,14 +119,19 @@
        <h2>Automated Testing</h2>
 
         <p>We have been using the automated test multiple times through the
-          process, so we have not get to many errors each time.</p>
+          process, so we have not get to many errors each time.
+          Some code may initially be made as an experiment, and then be implemented. Errors can happen
+          quickly and be diffcult to spot after the codebase grows bigger. Using Automated tests have been 
+          a good tool to identify such errors. 
+        
+        </p>
 
         <h3>Achecker</h3>
         <p>The only error we got from Achecker was missing alt tags on images.
         </p>
 
         <h3>HTML Validator</h3>
-        <img src="img/quote-error.png">
+        <img src="img/quote-error.png" alt="Screenshot from html validator, show error of missing quote-mark">
         <p>We got some errors by the html validator that could have been difficult to spot whithou the automated test.
            For example a missing quote from one one of the atributes in a svg image
         </p>
@@ -135,7 +140,10 @@
         </p>
 
         <h3>CSS Validator</h3>
-        <p>Using html validator</p>
+        <p>
+          We got an error for bad value, using space in the filename.
+          <img src="img/bad_value_filename.png" alt="Screenshot from css validator, show error of bad value on filename">
+        </p>
         </div>
       </article>
     </main>
