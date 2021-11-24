@@ -17,18 +17,21 @@
 }
 
 body {
- background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
   margin: 0 auto;
+  background-image: url("../img/background.png");
+  background-color: var(--bakgrunn);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 12px;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   background-image: linear-gradient(var(--bakgrunn) 50%, #f5ded7);
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background:var(--textfarge-primary);
 }
 
@@ -38,47 +41,20 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /*margin: 0 auto 10rem;*/
 }
 
-.wrapper-text{
-  width: 100%;
-  position: relative;
-  margin-top: -40%;
-}
-.wrapper-text h1 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 10vw;
-}
-.wrapper-text p{
-  font-family: 'Sora', sans-serif;
-  font-weight: 4rem;
-  text-align: center;
-  font-size: 2vw;
-  margin-left: 15rem;
-  margin-right:15rem;
-}
-
-
-
-.wrapper video{
-  margin-top: -8rem;
-  z-index:-1;
-}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
 header {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 8rem;
+  margin-bottom: 16rem;
   padding: 1rem 0;
 }
 
@@ -117,25 +93,15 @@ nav a:hover {
 
 
 
-.menu-small-screen {
-    visibility: hidden;
-}
-
 h1 {
   font-family: monospace;
   color: #232323;
-  /*
-    font-size: 25rem;
-    opacity: 0.2;
-    text-align: center;
-    */
   font-size: 4rem;
   margin-bottom: 2rem;
   z-index: -1;
   text-decoration: underline;
-  text-decoration-color: rgb(0, 154, 243);
+  text-decoration-color: #365465ff;
   text-underline-offset: 0.5rem;
-  text-align: center;
 
 }
 
@@ -145,37 +111,26 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  margin-top: 20px;
 }
 
 p {
-  font-size: 1.3rem;
-  line-height: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   max-width: 70ch;
 }
-.welcome-text {
-  width: 80%;
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-bottom: 15rem;
-  
-}
 
-.our-courses {
+
+.text-article img{
+/*  display: block;
+  max-width: 80%;
+  */
   width: 70%;
-}
-
-.essay-img {
-  text-align: left;
-}
-
-.essay-img img{
-  width: 100%;
-  max-width: 720px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.text-article > h2 {
+  align-self: flex-start;
 }
 
 .essay-img:not(:first-of-type) {
@@ -186,35 +141,17 @@ p {
 
 
 
-@media screen and (max-width: 1100px) {
-  .article-intro {
-    display: grid;
-    grid-template-columns: none;
-  }
-}
+
 
 @media screen and (max-width: 700px) {
-
-
-  .text-article {
-    width: 95%;
-  }
-  .wrapper {
-    margin-top: 0;
-    background-image: none;
-    background-image: url("/img/coworkers2.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-  
+  body {
+    background-image: url("/img/bkgd-small.png");
+    background-size: 700px auto;
   }
 
-  #welcome {
-    width: 95%;
-    font-size: 2rem;
-    line-height: 2.5rem;
-   /* margin-top: 4rem;*/
-}
+ 
+ 
+
   header {
     flex-direction: column;
     gap: 2rem;
@@ -239,13 +176,14 @@ header #logo {
   margin: 0;
 }
 
+.essay-img img{
+  max-width: 100%;
+}
+
 nav {
   flex-direction: column;
 }
 
-  .information-cards-container {
-    grid-template-columns: none;
-  }
 
   p {
     font-size: 1.2rem;

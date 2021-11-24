@@ -14,6 +14,79 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Data</title>
+
+    <style>
+
+
+        body {
+            /*
+            background-color: var(--bakgrunn);
+            background-image: url("/img/coworkers.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center 8rem;
+            background-size: 50%;
+            background-size: auto;
+
+            */
+        background-image: url("img/background.png");
+        background-color: var(--bakgrunn);
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+        
+        #welcome {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            margin-top: 4rem;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+         /* text-align: center;*/
+          /*display: flex;
+          flex-direction: column;
+          justify-content: center;*/
+          margin: 8rem 0;
+          min-height: 90vh;
+          background-image: url("img/coworkers2.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: bottom;
+          
+    }
+
+    @media screen and (max-width: 700px) {
+
+        body {
+            background-image: url("/img/bkgd-small.png");
+            background-size: 700px auto;
+        }
+
+        #welcome {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+            background-size: 100%;
+
+        }
+    }
+
+        
+
+       
+        img {
+            margin: 0 auto;
+            max-width: 50%;
+        }
+
+    
+      
+
+    </style>
   </head>
 
   <body>
@@ -21,31 +94,31 @@
         <nav>
           <a href="index.html"><img id="logo" src="img/logo.svg" /></a>
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-active" href="index.html">Home</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="essay.html">Essay</a></li>
             <li class="nav-item"><a href="accessibility.html">Accessibility</a></li>
             <li class="nav-item"><a href="info.html">Info</a></li>
             <li class="nav-item"><a href="fun.html">Fun</a></li>
           </ul>
         </nav>
-    </header>
     
-      <div class="wrapper">
-        <video autoplay muted loop id="video" src="media/Mountain.mp4" type="video/mp4">
-        </video>    
-        <div class="wrapper-text">
-        <h1>Hello World</h1>
-        <p class="welcome-text">
+    </header>
+    <main>
+
+        
+        <div class="wrapper">
+            <h1>Hello World!</h1>
+        <p id="welcome" class="welcome-text">
           We are a group of four first-year coumputer engineer students at OsloMet. This website is our final
           assignment in the course DATA 1200 Inclusive Web Design.
         </p>
-        </div>
-      </div>
-    <main>
+    </div>
+     
+ 
       <article class="our-courses">
         <h2 id="our-courses-title">About our assignment:</h2>
         <div class="information-cards-container">
-          <div class="information-card" data-aos="fade-up-right">
+          <div class="information-card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -70,8 +143,7 @@
           </div>
           <div
             class="information-card"
-            data-aos="fade-up-left"
-            data-aos-delay="50"
+           
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path fill="none" d="M0 0H24V24H0z" />
@@ -91,8 +163,7 @@
           </div>
           <div
             class="information-card"
-            data-aos="fade-down-right"
-            data-aos-delay="150"
+        
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +191,7 @@
 
           <div
             class="information-card"
-            data-aos="fade-down-left"
-            data-aos-delay="150"
+        
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -149,10 +219,10 @@
         </div>
       </article>
     </main>
-
+<!--
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script>-->
   </body>
 </html>

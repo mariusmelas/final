@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/article.css" />
     <link rel="stylesheet" href="styles/accessibility.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
       rel="stylesheet"
     />
-    <title>Data</title>
+    <title>Accessibility</title>
     <style>
-      img {
+      .a-img {
         width: 50%;
         border: 2px solid black;
       }
@@ -44,7 +43,7 @@
       <article class="text-article">
 
         <h1>Accessibility</h1>
-
+        <div>
         <h2>Inclusive design</h2>
         <p>
           We have been thinking about accessibility throughout the process of
@@ -79,12 +78,16 @@
           the top, colors are the same troughout all the pages. Margins and
           padding, is the the same on all pages.
         </p>
-
+      </div>
+      <div>
         <h2>Coding choices</h2>
 
         <h3>Readability</h3>
         <p>Naming elements with descriptive names</p>
         <p>Trying to making the html structure as simple as possible</p>
+        <p>Splitting the css up into multiple files, we have one css file: style.css is 
+          is general for all pages, and we have own css files for more specific parts of the page.
+        </p>
 
         <h3>Re-use code</h3>
         <p>
@@ -96,20 +99,27 @@
         </p>
 
 
-
+      <!--
        <h3>Sticky navigation bar</h3>
        <p>
-        The site should be useable, even if the user <a href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target="_blank">needs to zoom.</a>
+        The site should be useable, even if the user <a href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target="_blank"
+        title="How to Meet WCAG (Quickref Reference)">needs to zoom.</a>
         We wanted to have the navigation sticked to the top of the window, but as this broke the usability of page while zooming, we chosed not to.
 
         </p>
-        <img src="img/accessibility-sticky-problem.png">
+        <div class="">
+          <img class="a-img" src="img/accessibility-sticky-problem.png">
+        </div>
+        
 
+      </div>
 
+    -->
+      <div>
        <h2>Automated Testing</h2>
 
-        We have been using the automated test multiple times through the
-        process, so we have not get to many errors each time.
+        <p>We have been using the automated test multiple times through the
+          process, so we have not get to many errors each time.</p>
 
         <h3>Achecker</h3>
         <p>Using Achecker</p>
@@ -119,6 +129,7 @@
 
         <h3>CSS Validator</h3>
         <p>Using html validator</p>
+        </div>
       </article>
     </main>
   </body>

@@ -1,8 +1,23 @@
 
+.our-courses-section {
+    width: 70%;
+  }
+  
+
 #our-courses-title{
     font-weight: 500;
-    font-size: 44px;
+    font-size: 2rem;
 }
+
+#welcome-text {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 15rem;
+    
+  }
+  
+
 /*
 
     Grid på framside med Preview av text
@@ -13,10 +28,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 1fr 1fr;
-    
-    
-    */
     grid-gap: 2.5rem;
     margin-bottom: 3rem;
     
@@ -76,10 +87,52 @@
     width: 90%;
     text-align: center;
     opacity: 0.7;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s;
 }
 .information-card > a:hover{
     opacity: 1.0;
     transition: opacity .15s ease-in-out;
-    
+}
+.fadein{
+    animation: fadein 3s both;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+.fadeout{
+    animation: fadeout 3s both;;
+}
+@keyframes fadeout{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  #welcome-text {
+    width: 95%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+   /* margin-top: 4rem;*/
+}
+
+.information-cards-container {
+    grid-template-columns: none;
+  }
+
+
 }
