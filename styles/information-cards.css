@@ -1,7 +1,7 @@
 
 .our-courses-section {
     width: 70%;
-  }
+}
   
 #our-courses-title{
     font-weight: 500;
@@ -9,26 +9,25 @@
 }
 
 #welcome-text {
-    width: 80%;
     font-size: 2rem;
     line-height: 3rem;
     margin-bottom: 15rem;
-    
-  }
+    width: 80%;
+}
   
 
 
-  .welcome-section {
+.welcome-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     grid-gap: 4rem;
     margin-bottom: 10rem;
-  }
+}
 
-  .welcome-section img {
+.welcome-section img {
     width: 70%;
-  }
+}
 
 
 
@@ -39,45 +38,41 @@
 */
 
 .information-cards-container {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.5rem;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .information-card {
+    align-items: center;
+    background-color:#365465ff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    position: relative;
-    padding: 2rem;
     justify-items: center;
+    margin-top: 2rem;
     min-height: 300px;
-    justify-content: space-around;
-    background-color:#365465ff;
     opacity: 1;
-
+    padding: 2rem;
+    position: relative;
 }
 
 #our-courses-title {
-    text-align: center;
     margin-bottom: 4rem;
-
+    text-align: center;
 }
 
 .information-card > svg {
-    background-color:#393E46;
-    padding: 1rem;
-    color: #EEEEEE;
-    position: absolute;
-    width: 50px;
-    top: -40px;
     align-self: center;
+    background-color:#393E46;
     border-radius: 50%;
-
+    color: #EEEEEE;
+    padding: 1rem;
+    position: absolute;
+    top: -40px;
+    width: 50px;
 }
 
 .information-card > p {
@@ -93,23 +88,23 @@
 }
 
 .information-card > a {
-    display: inline-block;
-    padding: 1rem 0;
+    align-self: center;
     background: #393E46;
     color:#EEEDE7;
+    display: inline-block;
+    font-weight: 600;
+    opacity: 0.7;
+    padding: 1rem 0;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
-    align-self: center;
-    width: 90%;
-    text-align: center;
-    opacity: 0.7;
     transition: opacity 1s;
+    width: 90%;
 }
 
 .information-card > a:hover{
-    opacity: 1.0;
     color:#00ADB5;
+    opacity: 1.0;
     transition: opacity .15s ease-in-out;
 }
 
@@ -146,9 +141,9 @@
 @media screen and (max-width: 700px) {
 
   #welcome-text {
-    width: 95%;
     font-size: 2rem;
     line-height: 2.5rem;
+    width: 95%;
    /* margin-top: 4rem;*/
   }
 
@@ -156,7 +151,7 @@
     width: 90%;
   }
 
-.information-cards-container {
+  .information-cards-container {
     grid-template-columns: none;
   }
 }

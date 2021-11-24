@@ -1,15 +1,15 @@
 /* ===========================================================
-   Style main content of pages
+    Style main content of pages
    ===========================================================*/
 .text-article {
-    width: 95%;
     max-width: 46rem;
     margin: 0 auto 5rem;
+    width: 95%;
 }
 
 .text-article img{
-    width: 100%;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .text-article h2 {
@@ -34,15 +34,15 @@
     Style quotes
    ============================================================*/
 .text-article blockquote {
-    display: inline-block;
-    margin: 2rem 2rem;
-    padding: 2rem 2rem;
-    color: #3d3d41;
     background: var(--pink-light);
-    font-size: 2rem;
     border-left: 0.5rem solid var(--pink);
+    color: #3d3d41;
+    display: inline-block;
+    font-size: 2rem;
     font-style: italic;
+    margin: 2rem 2rem;
     max-width: 100%;
+    padding: 2rem 2rem;
 }
 
 blockquote p {
@@ -59,7 +59,7 @@ blockquote::before {
 }
 
 /* =========================================================================
-   This section styles the paragraph with a picture on the Info page
+    This section styles the paragraph with a picture on the Info page
    =========================================================================*/
 .article-intro {
     display: grid;
@@ -71,15 +71,14 @@ blockquote::before {
 .article-intro > p {
     align-self: center; 
     font-size: 1.5rem;
-    line-height: 2rem;
     font-style: italic;
+    line-height: 2rem;
 }
 
 .article-intro > figure {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
     align-self: center;
-    
+    margin-inline-start: 0;
+    margin-inline-end: 0;    
 }
 
 .article-intro > figure > img {

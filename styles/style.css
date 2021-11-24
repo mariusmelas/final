@@ -3,26 +3,29 @@
   /*--boxfarge: #b9b7bd;*/
   --dark-color: #23232e;
   --light-grey: #868b8e;
+  --linkvisited: #b31818;
   --pink: #dbbdb3;
   --pink-light: #e7d2cc;
   --blue: #3e55b9;
-  --linkvisited: #b31818;
 }
 
 * {
-  scroll-behavior: smooth;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+  scroll-behavior: smooth;
 }
 
+/* ========================================================
+    Main content
+   ========================================================*/
 body {
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
-  margin: 0 auto;
   background-image: url("../img/background.png");
   background-color: var(--background);
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -37,78 +40,14 @@ body::-webkit-scrollbar-thumb {
   background:var(--dark-color);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* =======================================================
-   Styles navigation bar
-   =======================================================*/
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-  margin: 0 auto;
-}
-
-header {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  padding: 1rem 0;
-}
-
-header #logo {
-    width: 70px;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Styles navigation menu links 
-   =======================================================*/
-.nav-item {
-  display: inline-block;
-  margin-right: 1rem;
-  align-self: center;
-}
-
-/*Styles link for the page the user is on*/
-.nav-active {
-  color: rgb(0,154,243) !important;
-}
-
-.nav-item a {
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: var(--dark-color);
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-nav a:hover {
-  color: var(--light-grey);
-}
-
-/* ========================================================
-   Styles headers and paragraphs
-   ========================================================*/
 h1 {
-  font-family: monospace;
   color: var(--dark-color);
+  font-family: monospace;
   font-size: 4rem;
   margin-bottom: 2rem;
   text-decoration: underline;
   text-decoration-color: #365465ff;
   text-underline-offset: 0.5rem;
-
 }
 
 h2 {
@@ -124,13 +63,73 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ==============================================================
-   Styles welcome section on the main page
-   ==============================================================*/
-.welcome-section {
+main {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+/* =======================================================
+    Styles navigation bar
+   =======================================================*/
+nav {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+
+header {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+header #logo {
+    width: 70px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  Styles navigation menu links 
+   =======================================================*/
+.nav-item {
+  align-self: center;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/*Styles link for the page the user is on*/
+.nav-active {
+  color: rgb(0,154,243) !important;
+}
+
+.nav-item a {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light-grey);
+}
+
+/* ==============================================================
+    Styles welcome section on the main page
+   ==============================================================*/
+.welcome-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   grid-gap: 2rem;
   margin-bottom: 10rem;
 }
@@ -141,19 +140,19 @@ p {
 
 #welcome-text {
   font-size: 2rem;
+  margin: 0 auto;
   margin-top: 4rem;
   width: 70%;
-  margin: 0 auto;
 }
 
 /*Sets a border around picture on Accessibility page*/
 .a-img {
-  width: 50%;
   border: 2px solid black;
+  width: 50%;
 }
 
 /* ==============================================================
-   Styles screens smaller than 700px
+    Styles screens smaller than 700px
    ==============================================================*/
 @media screen and (max-width: 700px) {
 
@@ -179,17 +178,17 @@ p {
   }
 
   header #logo {
-    width: 70px;
     align-self: start;
     margin: 0;
     margin-bottom: 1rem;
+    width: 70px;
   }
 
   .nav-list {
+    align-items: center;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
   }
 
   .nav-item {
@@ -197,13 +196,13 @@ p {
   }
 
   nav {
-  flex-direction: column;
+    flex-direction: column;
   }
 
   /*Styles welcome section for smaller screens*/
   #welcome {
-    width: 95%;
     margin: 0 auto;
+    width: 95%;
   }
   
   .welcome-section img {
