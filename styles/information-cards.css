@@ -37,7 +37,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 2rem;
     position: relative;
     padding: 2rem;
     justify-items: center;
@@ -74,8 +74,7 @@
 }
 .information-card > a {
     display: inline-block;
-    margin-top: 15px;
-    padding: 8px 15px;
+    padding: 1rem 0;
     background: #393E46;
     color:#EEEDE7;
     text-decoration: none;
