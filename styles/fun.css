@@ -56,7 +56,7 @@ section {
 
 .content {
     display: flex;
-    padding: 5rem;
+    /*padding: 5rem;*/
     justify-self: start;
     align-self: center;
     width: 90%;
@@ -68,7 +68,6 @@ figure {
 }
 
 .content p {
-    width: 100%;
     color: lightgrey;
     font-size: 1.2rem;
     max-width: 50ch;
@@ -157,4 +156,33 @@ a {
 
 #fourth img {
     opacity: 0.5;
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    section {
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 20px 20px 1fr 20px;
+     
+    }
+
+    .content {
+      
+        flex-direction: column;
+        justify-self: center;
+     
+    }
+
+    .turn-text {
+        display: hidden;
+    }
+
+    .content figure {
+        width: 90%;
+        margin-inline-start: 0;
+    }
+    
+
 }
