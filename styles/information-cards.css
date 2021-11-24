@@ -65,12 +65,14 @@
 
 }
 .information-card > p {
-    color: #393E46;
+    /*color: #393E46;*/
+    color: white;
     font-size: 1rem;
 
 }
 .information-card > h3 {
     align-self: center;
+    color: white;
 }
 .information-card > a {
     display: inline-block;
