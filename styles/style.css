@@ -202,6 +202,7 @@ nav a:hover {
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   body {
-    background-size: 1000px auto;
+    background-size: 1000px auto; 
+    /*Prevents the background height from being too small where it doesn't cover the navbar*/
   }
 }

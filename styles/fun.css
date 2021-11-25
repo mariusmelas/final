@@ -3,12 +3,12 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Courier', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
 }
 
 /* ==================================================
-    Style navigation
+    Styles navigation
    ==================================================*/
 nav {
     text-align: center;
@@ -52,14 +52,13 @@ section {
 }
 
 .title {
-
     grid-row-start: 2;
     grid-column-start: 2;
     justify-self: center;
     font-weight: bold;
-    background-color: var(--codegreen);
-    color: #111111;
-    
+    font-size: 2rem;
+    color: var(--codegreen);
+    margin: 0;
 }
 .title-hex {
     writing-mode: vertical-rl;
@@ -93,8 +92,6 @@ figure {
 
 .content img {
     width: 100%;
- 
-   
 }
 
 .green-text {
@@ -119,7 +116,7 @@ figure {
 }
 
 /* ==================================================
-    Style second section
+    Styles second section
    ==================================================*/
 #second {
     background-color: #303030;
@@ -166,19 +163,34 @@ figure {
 #fourth {
     background-color: #202020;
     color: var(--codegreen);
+    position: relative;
+    align-items: center;
 }
 
 #fourth .content {
     flex-direction: column;
+    z-index: 1;
+}
+
+#fourth .turn-text, 
+#fourth .title,
+#fourth .deco-box {
+    z-index: 1;
 }
 
 #fourth img {
     opacity: 0.5;
 }
 
-video {
-    width: 100%;
+#fourth video {
     margin-bottom: -5px; /*To remove the white border that shows up under the video*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 @media screen and (max-width: 700px) {

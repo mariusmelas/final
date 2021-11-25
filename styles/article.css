@@ -1,5 +1,5 @@
 /* ===========================================================
-    Style main content of pages
+    Styles main content of pages
    ===========================================================*/
 .text-article {
 
@@ -30,7 +30,7 @@
 }
 
 /* ============================================================
-    Style quotes
+    Styles quotes
    ============================================================*/
 .text-article blockquote {
     background: var(--pink-light);
@@ -58,7 +58,7 @@ blockquote::before {
 }
 
 /* =========================================================================
-    This section styles the paragraph with a picture on the Info page
+    Styles paragraphs with a picture on the Info page
    =========================================================================*/
 .article-intro {
     display: grid;

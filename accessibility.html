@@ -43,29 +43,27 @@
        
         <p id="ingress">
           We have been thinking about accessibility throughout the process of
-          creating the websites. Making sure that the website is usable for all people,
-          even if you have some permanent or temporary inabillities, you should be able to 
-          have access to all the information on the website and have an good experience while 
-          visiting the site.
+          creating the websites. Making sure that the website is usable by people.
+          Even with permanent or temporary disabilities, all the information on 
+          the website should still be accessible and provides a good user experience 
+          for everyone.
         </p>
 
         <h2>Different screens</h2>
         <p>
           By using relatively sized elements, the site is responsive and works well
-          on different screen resolutions. When the width get below or equal to 700px, we use 
+          on different screen resolutions. When the width is below or equal to 700px, we use 
           media queries to change the layout. Font sizes and margins have been adjusted and
-          the links in the main menu are made bigger so it is easier to navigate with 
-          a finger.
+          the links in the main menu are made bigger for easier touch navigation such as on mobiles.
         </p>
 
         <h2>Colors</h2>
         <p>
           Setting up a color-palette with the use of CSS variables has made it simpler to
-          stick to our selected colors, and also provides a quickway of changing colors for
-          trying out different variants. We made sure that the contrast between the colors
-          is good. We also picked colors that fit the color scheme and also kept 
-          in mind the different types of blind anormalies (types of color-blindness). 
-          We also did a test to check if the colors were colorblind-friendly to which they are. 
+          stick to our selected colors and also provides a quick way of changing the color palette. 
+          We made sure that the contrast between the colors
+          is good. While picking the color scheme, we made sure to keep in mind the different 
+          types of blind anomalies (types of color-blindness) which we tested.
         </p>
         <img src="img/color_blindness_test.jpg" alt="color blind-test">
 
@@ -74,13 +72,11 @@
           We went with a simplistic approach to the
           design, letting the information on the site be the main focus, and
           avoiding unnecessary and distracting elements. Following conventions
-          for how elements are placed, for example putting the main menu in the top.</p>
+          for how elements are placed, for example putting the main menu at the top.</p>
         
         <p>
-          It's important that the whole page fits together, such that the users
-          always know that they are on the same site. The menu bar always is at
-          the top, and the colors are the same throughout all the pages. Margins and
-          paddings are the same on all the pages.
+          It's important that the whole page fits together, the pages noticeably belonging to one site. 
+          The menu bar is always at the top and the color scheme is the same throughout all the pages.
         </p>
      
         <h2>Coding choices</h2>
@@ -88,12 +84,12 @@
         <h3>Readability</h3>
         <p>Elements were given descriptive names to make it easier to recognize the different parts of the page.</p>
         <p>
-          We kept the HTML structure as simple as possible for easier maintainability. As well as, splitting the 
-          css up into multiple files; "style.css" is for general styles that apply for all pages, and we have separate 
-          css files for more specific parts of each page.
+          We kept a simple HTML structure for easier maintainability. As well as splitting the 
+          CSS up into multiple files; "style.css" is for general styles that apply for all pages, and separate 
+          CSS files for more specific styles for each page.
         </p>
 
-        <h3>Re-use code</h3>
+        <h3>Re-used code</h3>
         <p>
           The header element has been used on every page. This page, the essay
           page and the info page all have a text article. The class
@@ -102,40 +98,42 @@
           elements within the &lt;article&gt;-element
         </p>
 
-        <h2>Semantic HMTL</h2>
+        <h2>Semantic HTML</h2>
         <p>
-          By using semantic tags we make sure that the a screenreader can better understand the page, also 
-          it is good for SEO and readability of the code. It will also help and distribute information about the page, which helps the developer aswell as the brower to understand the page is about.
-           For example we have only one &lt;h1&gt; tag pr page, and use subheaders properly.
-           For all the pages that have an typical article, we use the &lt;article&gt;-element, that has meaning 
-           so that screenreaders know that the content should make sense of its own.  
+          By using semantic tags we make sure that a screenreader can better understand the page and it is also 
+          good for SEO and readability of the code. It will also help to distribute information about the page, 
+          which helps the developer as well as the browser to understand what the page is about.
+          For example we have only one &lt;h1&gt; tag per page and we use subheaders properly. 
+          For all the pages that have a typical article format, we use the &lt;article&gt;-element, that has meaning 
+          so that screenreaders know that the content should make sense on its own.  
         </p>
-       <h2>Automated Testing</h2>
 
-        <p>We have been using the automated test multiple times through the
-          process, so we have not get to many errors each time.
+        <h2>Automated Testing</h2>
+
+        <p>
+          We have been using the automated test multiple times through the
+          process, so we have not gotten many errors each time.
           Some code may initially be made as an experiment, and then be implemented. Errors can happen
-          quickly and be diffcult to spot after the codebase grows bigger. Using Automated tests have been 
+          quickly and be difficult to spot after the codebase grows bigger. Using Automated tests has been 
           a good tool to identify such errors. 
         </p>
-        <p>Automated tests we used was <a href="https://achecker.achecks.ca/" target="_blank">AChecker</a>,<a href="https://wave.webaim.org/" target="_blank">Wave</a>,<a href="https://validator.w3.org/" target="_blank">HTML validator</a>
+        <p>Automated tests we used was <a href="https://achecker.achecks.ca/" target="_blank">AChecker</a>,
+          <a href="https://wave.webaim.org/" target="_blank">Wave</a>,
+          <a href="https://validator.w3.org/" target="_blank">HTML validator</a>
           and <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a>. 
           Where CSS-validator and AChecker did not give us any issues. 
         </p>
 
-
-      
-       
         <h3>Wave</h3>
 
-        <p>We had a blue color on the active links in the navbar, that seemed good by us, however the test we did with
-           wave gave us an error that contrast was to low. 
+        <p>We had a blue color on the active links in the navbar to indicate which page the user is currently on, 
+          which at first glance seemed fine. However, the test we did with Wave gave us an error that the contrast was too low. 
         </p>
         <img src="img/contrast-error.png" alt="Screenshot from wave showing contrast error">
   
         <h3>HTML Validator</h3>
-        <p>We got some errors by the html validator that could have been difficult to spot whithou the automated test.
-          For example a missing quote from one one of the atributes in a svg image. Also, errors of tags that was not closed properly.
+        <p>We got some errors by the html validator that could have been difficult to spot without the automated test.
+          For example a missing quote from one of the attributes in an svg image. Also, errors of tags that were not closed properly.
        </p>
     
         <img src="img/quote-error.png" alt="Screenshot from html validator, show error of missing quote-mark">
