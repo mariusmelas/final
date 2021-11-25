@@ -42,7 +42,7 @@ h1 {
   color: var(--dark-color);
   font-family: monospace;
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-decoration: underline;
   text-decoration-color: #365465ff;
   text-underline-offset: 0.6rem;
@@ -50,10 +50,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 h3 {
   font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -76,7 +78,7 @@ main {
 header {
   background-color: rgb(229, 208, 202);
   margin: 0 auto;
-  margin-bottom: 7.5rem;
+  margin-bottom: 10rem;
   padding: 0.5rem 0;
   position: fixed;
   top: 0;

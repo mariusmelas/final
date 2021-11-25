@@ -24,9 +24,6 @@
     text-decoration: none;
 }
 
-.text-article a:visited {
-    color: var(--linkvisited);
-}
 
 .text-article a:hover {
     color: var(--grey);
@@ -42,7 +39,7 @@
     display: inline-block;
     font-size: 2rem;
     font-style: italic;
-    margin: 2rem 2rem;
+    margin: 1rem 0 2rem 2rem;
     max-width: 100%;
     padding: 2rem 2rem;
 }
@@ -75,18 +72,26 @@ blockquote::before {
     font-size: 1.5rem;
     font-style: italic;
     line-height: 2rem;
+    margin-bottom: 4rem;
 }
 
-.article-intro > figure {
+.text-article  figure {
     align-self: center;
     margin-inline-start: 0;
     margin-inline-end: 0;    
 }
 
-.article-intro > figure > img {
+.text-article figure > img {
     align-self: flex-start;
     width: 100%;
+    margin-bottom: 0;
 }
+
+#essay-figure {
+    margin-inline-start: 0;
+    margin-bottom: 2rem;
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -100,12 +105,16 @@ blockquote::before {
 @media screen and (max-width: 700px) {
   
     .text-article {
-        width: 95%;
+        width: 90%;
       }
       
-    .text-article img {
+    .text-article img, #essay-figure {
         max-width: 100%;
     }
+    .text-article blockquote {
+        margin-left: 0.5rem;
+    }
+
 }
 
 @media screen and (min-width: 1100px) {
