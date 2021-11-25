@@ -17,13 +17,9 @@ section {
 
 
 #first {
-
     background-color: #111111;
     color: var(--codegreen);
-   
     justify-content: center;
-
-
 }
 
 
@@ -33,7 +29,10 @@ section {
     align-self: center;
     writing-mode: vertical-rl;
     transform: scale(-1);
+    font-weight: bold;
+    font-size: 17px;
 }
+
 .title {
 
     grid-row-start: 2;
@@ -62,6 +61,7 @@ section {
     width: 90%;
     grid-row-start: 3;
     grid-column-start:2;
+    position: relative;
 }
 figure {
     width: 50%;
@@ -113,7 +113,12 @@ figure {
     font-size: 2rem;
 }
 
-
+#second img {
+    width: 40%;
+    position: absolute;
+    top: -65%;
+    right: -5rem;
+}
 
 nav {
     text-align: center;
@@ -143,15 +148,11 @@ a {
 
 #fourth {
     background-color: #202020;
-   
     color: var(--codegreen);
-
 }
 
 #fourth .content {
     flex-direction: column;
-  
-
 }
 
 #fourth img {
@@ -186,3 +187,15 @@ a {
     
 
 }
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+   background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #23232e;
+  }
+  

@@ -7,6 +7,7 @@
   --pink: #dbbdb3;
   --pink-light: #e7d2cc;
   --blue: #3e55b9;
+  --darkblue: #16547e;
 }
 
 * {
@@ -26,15 +27,13 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  overflow: overlay;
 }
 
 body::-webkit-scrollbar {
   width: 12px;
 }
 
-body::-webkit-scrollbar-track {
-  background-image: linear-gradient(var(--background) 50%, #f5ded7);
-}
 
 body::-webkit-scrollbar-thumb {
   background:var(--dark-color);
@@ -47,7 +46,7 @@ h1 {
   margin-bottom: 2rem;
   text-decoration: underline;
   text-decoration-color: #365465ff;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.6rem;
 }
 
 h2 {
@@ -61,6 +60,7 @@ h3 {
 p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  max-width: 70ch;
 }
 
 main {
@@ -68,11 +68,23 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 14rem;
 }
 
 /* ==========================================================
     Styles navigation bar
    ==========================================================*/
+header {
+  background-color: rgb(229, 208, 202);
+  margin: 0 auto;
+  margin-bottom: 7.5rem;
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -81,15 +93,8 @@ nav {
   width: 95%;
 }
 
-header {
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  padding: 1rem 0;
-  width: 100%;
-}
-
 header #logo {
-    width: 70px;
+    width: 50px;
 }
 
 .nav-list {
@@ -107,7 +112,7 @@ header #logo {
 
 /*Styles link for the page the user is on*/
 .nav-active {
-  color: rgb(0,154,243) !important;
+  color: #16547e !important;
 }
 
 .nav-item a {
@@ -156,6 +161,10 @@ nav a:hover {
    ==========================================================*/
 @media screen and (max-width: 700px) {
 
+  main {
+    margin-top: 3rem;
+  }
+
   /*Replaces background picture with a cropped version*/
   body {
     background-image: url("../img/bkgd-small.png");
@@ -175,6 +184,8 @@ nav a:hover {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
+    position: relative;
+    background-color: transparent;
   }
 
   header #logo {
@@ -207,5 +218,11 @@ nav a:hover {
   
   .welcome-section img {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  body {
+    background-size: 1000px auto;
   }
 }

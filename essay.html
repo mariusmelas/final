@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/article.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/article.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +45,7 @@
           </figcaption>
 
         <h2>Upper-secondary school to university</h2>
-        <p>
+        <p class="article-paragraph">
           The transition from upper-secondary school to university is a pretty
           big one. Having studied at IB, I was used to a pretty heavy workload
           and a fast teaching pace. However, what I did not expect was the
@@ -129,5 +129,11 @@
       
       </article>
     </main>
+    <script>
+
+      let article = document.querySelector(".article-paragraph")
+      console.log(article.clientWidth)
+
+  </script>
   </body>
 </html>

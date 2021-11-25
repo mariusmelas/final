@@ -1,4 +1,7 @@
-
+:root{
+    --pink: #dbbdb3;
+    --pink-light: #e7d2cc;
+}
 .our-courses-section {
     width: 70%;
 }
@@ -47,7 +50,7 @@
 
 .information-card {
     align-items: center;
-    background-color:#365465ff;
+    background-color:var(--pink-light);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -76,8 +79,7 @@
 }
 
 .information-card > p {
-    /*color: #393E46;*/
-    color: white;
+    color: #393E46;
     font-size: 1rem;
 
 }
@@ -90,7 +92,7 @@
 .information-card > a {
     align-self: center;
     background: #393E46;
-    color:#EEEDE7;
+    color:#EEEEEE;
     display: inline-block;
     font-weight: 600;
     opacity: 0.7;
@@ -103,7 +105,7 @@
 }
 
 .information-card > a:hover{
-    color:#00ADB5;
+    color:white;
     opacity: 1.0;
     transition: opacity .15s ease-in-out;
 }

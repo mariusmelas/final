@@ -34,6 +34,12 @@
           <li class="nav-item"><a href="fun.html">Fun</a></li>
         </ul>
       </nav>
+      <style>
+        .image-and-text {
+          display: flex;
+          gap: 2rem;
+        }
+        </style>
     </header>
     <main>
       <article class="text-article">
@@ -107,12 +113,22 @@
         <p>The only error we got from Achecker was missing alt tags on images.
         </p>
 
-        <h3>HTML Validator</h3>
-        <img src="img/quote-error.png" alt="Screenshot from html validator, show error of missing quote-mark">
-        <p>We got some errors by the html validator that could have been difficult to spot whithou the automated test.
-           For example a missing quote from one one of the atributes in a svg image. Also, errors of tags that was not closed properly.
-        </p>   
+       
+        <h3>Wave</h3>
 
+        <p>We had a blue color on the active links in the navbar, that had issues with contrast. </p>
+        <figure>
+        <img src="img/contrast-error.png" alt="Screenshot from wave showing contrast error">
+          <figcaption>Screenshot from <a href="https://wave.webaim.org/">wave.webaim</a><figcaption>
+      </figure>
+        <h3>HTML Validator</h3>
+        <p>We got some errors by the html validator that could have been difficult to spot whithou the automated test.
+          For example a missing quote from one one of the atributes in a svg image. Also, errors of tags that was not closed properly.
+       </p>
+       <figure>
+        <img src="img/quote-error.png" alt="Screenshot from html validator, show error of missing quote-mark">
+        <figcaption>Screenshot from <a href="https://wave.webaim.org/"></a><figcaption>
+        </figure>
         <h3>CSS Validator</h3>
         <p>
           We got an error for bad value, using space in the filename.

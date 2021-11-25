@@ -15,17 +15,26 @@
     <section id="first">
         <div class="deco-box"></div>
         <div class="deco-box"></div>
-
         <div class="turn-text"><p class="date">Time: 1940</p></div>
         <p class="title">First computer</p>
         <p class="title-hex">0x466972737420636f6d7075746572</p>
         <div class="content">
             <figure id="section2">
                 <img src="img/eniac.jpg">
-            <figcaption>A technician changes a tube. Caption reads "Replacing a bad tube meant checking among ENIAC's 19,000 possibilities." Center: Possibly John Holberton</figcaption>
+            <figcaption>A technician changes a tube. Caption reads "Replacing a bad tube meant checking among ENIAC's 
+                19,000 possibilities." Center: Possibly John Holberton</figcaption>
             </figure>
             <p>
-                <span class="green-text">Charles Babbage</span>, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century. After working on his revolutionary difference engine, designed to aid in navigational calculations, in 1833 he realized that a much more general design, an Analytical Engine, was possible. The input of programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. For output, the machine would have a printer, a curve plotter and a bell. The machine would also be able to punch numbers onto cards to be read in later. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer that could be described in modern terms as Turing-complete.
+                <span class="green-text">Charles Babbage</span>, an English mechanical engineer and polymath, originated 
+                the concept of a programmable computer. Considered the "father of the computer", he conceptualized and 
+                invented the first mechanical computer in the early 19th century. After working on his revolutionary 
+                difference engine, designed to aid in navigational calculations, in 1833 he realized that a much more 
+                general design, an Analytical Engine, was possible. The input of programs and data was to be provided 
+                to the machine via punched cards, a method being used at the time to direct mechanical looms such as the 
+                Jacquard loom. For output, the machine would have a printer, a curve plotter and a bell. The machine would 
+                also be able to punch numbers onto cards to be read in later. The Engine incorporated an arithmetic logic 
+                unit, control flow in the form of conditional branching and loops, and integrated memory, making it the 
+                first design for a general-purpose computer that could be described in modern terms as Turing-complete.
             </p>
         </div>
     </section>
@@ -37,8 +46,15 @@
         <p class="title">World Wide Web</p>
         <p class="title-hex">0x466972737420636f6d7075746572</p>
         <div class="content">
+            <img src="img/fun/earth.jpg" alt="Networks of the Earth">
             <p>
-                The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.            </p>
+                The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other 
+                web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may 
+                be interlinked by hyperlinks, and are accessible over the Internet. The resources of the Web are 
+                transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application 
+                called a web browser, and are published by a software application called a web server. The World Wide Web 
+                is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the 
+                technologies of which the Web is built.            </p>
         </div>
     </section>
     
@@ -63,9 +79,30 @@
 
         <div class="content">
             <img src="img/reinigungsroboter.png" alt="A graph of the increase of computational power over time">
-            <p>Original photo by <a href="https://en.wikipedia.org/wiki/Robotic_vacuum_cleaner#/media/File:Reinigungsroboter_tcm_101.JPG" target="_blank">Stephan M. Höhne</a></p>
+            <p>Original photo by 
+                <a href="https://en.wikipedia.org/wiki/Robotic_vacuum_cleaner#/media/File:Reinigungsroboter_tcm_101.JPG" 
+                target="_blank">Stephan M. Höhne</a>
+            </p>
         </div>
     </section>
-    
+    <!--
+    <script>
+        
+        let sections = document.getElementsByTagName("section")
+        console.log(sections);
+
+        document.addEventListener('scroll', (e) => {
+
+            console.log("scrolling...");
+            for(let section of sections) {
+
+                if(section.id = "second") {
+                    console.log(section.offsetTop);
+                }
+            }
+        })
+
+    </script>
+-->
 </body>
 </html>
