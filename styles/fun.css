@@ -176,6 +176,10 @@ figure {
     opacity: 0.5;
 }
 
+video {
+    width: 100%;
+    margin-bottom: -5px; /*To remove the white border that shows up under the video*/
+}
 
 @media screen and (max-width: 700px) {
 
