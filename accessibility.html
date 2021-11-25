@@ -34,71 +34,82 @@
           <li class="nav-item"><a href="fun.html">Fun</a></li>
         </ul>
       </nav>
-      <style>
-        .image-and-text {
-          display: flex;
-          gap: 2rem;
-        }
-        </style>
+
     </header>
     <main>
       <article class="text-article">
 
         <h1>Accessibility</h1>
-        <h2>Inclusive design</h2>
-        <p>
+       
+        <p id="ingress">
           We have been thinking about accessibility throughout the process of
-          creating the websites. Starting with an simplistic approach to the
+          creating the websites. Making sure that the website is usable for all people,
+          even if you have some permanent or temporary inabillities, you should be able to 
+          have access to all the information on the website and have an good experience while 
+          visiting the site.
+        </p>
+
+        <h2>Different screens</h2>
+        <p>
+          By using relatively sized elements, the site is responsive and works well
+          on different screen resolutions. When the width get below or equal to 700px, we use 
+          media queries to change the layout. Font sizes and margins have been adjusted and
+          the links in the main menu are made bigger so it is easier to navigate with 
+          a finger.
+        </p>
+
+        <h2>Colors</h2>
+        <p>
+          Setting up a color-palette with the use of CSS variables has made it simpler to
+          stick to our selected colors, and also provides a quickway of changing colors for
+          trying out different variants. We made sure that the contrast between the colors
+          is good. We also picked colors that fit the color scheme and also kept 
+          in mind the different types of blind anormalies (types of color-blindness). 
+          We also did a test to check if the colors were colorblind-friendly to which they are. 
+        </p>
+        <img src="img/color_blindness_test.jpg" alt="color blind-test">
+
+        <h2>Design</h2>
+        <p>
+          We went with a simplistic approach to the
           design, letting the information on the site be the main focus, and
           avoiding unnecessary and distracting elements. Following conventions
-          for how elements are placed, like putting the main menu in the top.
-        </p>
-
-        <h3>Different screens</h3>
+          for how elements are placed, for example putting the main menu in the top.</p>
+        
         <p>
-
-          By using relatived sized elements, the site is responsive and works well
-          on different screen resolutions. When the width get below 700px, we use 
-          media queries to change the layout. Font sizes and margins is adjusted and
-          the links in the main menu, is made bigger so it is easier to navigate with 
-          a finger, rather than a mouse pointer.
-        </p>
-
-        <h3>Colors</h3>
-        <p>
-          Setting up a color-palette with CSS variables has made it simpler to
-          stick to our selected colors, and also quick to change colors for
-          trying out different variants. We are making sure that the contrasts
-          is good.
-        </p>
-
-        <h3>Coherent design</h3>
-        <p>
-          It's important that the whole page fits together, that the users
-          always knows that they are on the same site. The menu bar always is on
-          the top, colors are the same troughout all the pages. Margins and
-          padding, is the the same on all pages.
+          It's important that the whole page fits together, such that the users
+          always know that they are on the same site. The menu bar always is at
+          the top, and the colors are the same throughout all the pages. Margins and
+          paddings are the same on all the pages.
         </p>
      
         <h2>Coding choices</h2>
 
         <h3>Readability</h3>
-        <p>Naming elements with descriptive names</p>
-        <p>Trying to making the html structure as simple as possible</p>
-        <p>Splitting the css up into multiple files, we have one css file: style.css is 
-          is general for all pages, and we have own css files for more specific parts of the page.
+        <p>Elements were given descriptive names to make it easier to recognize the different parts of the page.</p>
+        <p>
+          We kept the HTML structure as simple as possible for easier maintainability. As well as, splitting the 
+          css up into multiple files; "style.css" is for general styles that apply for all pages, and we have separate 
+          css files for more specific parts of each page.
         </p>
 
         <h3>Re-use code</h3>
         <p>
-          The header element, has been used on every page. This page, the essay
-          page and the info page all has a text article. The class
+          The header element has been used on every page. This page, the essay
+          page and the info page all have a text article. The class
           "article-style" is used for all these pages, as the base-layout for
           these articles will be the same, even if they have some unique
           elements within the &lt;article&gt;-element
         </p>
 
-
+        <h2>Semantic HMTL</h2>
+        <p>
+          By using semantic tags we make sure that the a screenreader can better understand the page, also 
+          it is good for SEO and readability of the code. It will also help and distribute information about the page, which helps the developer aswell as the brower to understand the page is about.
+           For example we have only one &lt;h1&gt; tag pr page, and use subheaders properly.
+           For all the pages that have an typical article, we use the &lt;article&gt;-element, that has meaning 
+           so that screenreaders know that the content should make sense of its own.  
+        </p>
        <h2>Automated Testing</h2>
 
         <p>We have been using the automated test multiple times through the
@@ -106,34 +117,30 @@
           Some code may initially be made as an experiment, and then be implemented. Errors can happen
           quickly and be diffcult to spot after the codebase grows bigger. Using Automated tests have been 
           a good tool to identify such errors. 
-        
+        </p>
+        <p>Automated tests we used was <a href="https://achecker.achecks.ca/" target="_blank">AChecker</a>,<a href="https://wave.webaim.org/" target="_blank">Wave</a>,<a href="https://validator.w3.org/" target="_blank">HTML validator</a>
+          and <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a>. 
+          Where CSS-validator and AChecker did not give us any issues. 
         </p>
 
-        <h3>Achecker</h3>
-        <p>The only error we got from Achecker was missing alt tags on images.
-        </p>
 
+      
        
         <h3>Wave</h3>
 
-        <p>We had a blue color on the active links in the navbar, that had issues with contrast. </p>
-        <figure>
+        <p>We had a blue color on the active links in the navbar, that seemed good by us, however the test we did with
+           wave gave us an error that contrast was to low. 
+        </p>
         <img src="img/contrast-error.png" alt="Screenshot from wave showing contrast error">
-          <figcaption>Screenshot from <a href="https://wave.webaim.org/">wave.webaim</a><figcaption>
-      </figure>
+  
         <h3>HTML Validator</h3>
         <p>We got some errors by the html validator that could have been difficult to spot whithou the automated test.
           For example a missing quote from one one of the atributes in a svg image. Also, errors of tags that was not closed properly.
        </p>
-       <figure>
+    
         <img src="img/quote-error.png" alt="Screenshot from html validator, show error of missing quote-mark">
-        <figcaption>Screenshot from <a href="https://wave.webaim.org/"></a><figcaption>
-        </figure>
-        <h3>CSS Validator</h3>
-        <p>
-          We got an error for bad value, using space in the filename.
-          <img src="img/bad_value_filename.png" alt="Screenshot from css validator, show error of bad value on filename">
-        </p>
+  
+    
       </article>
     </main>
   </body>

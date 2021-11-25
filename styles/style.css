@@ -3,7 +3,6 @@
   /*--boxfarge: #b9b7bd;*/
   --dark-color: #23232e;
   --light-grey: #868b8e;
-  --linkvisited: #b31818;
   --pink: #dbbdb3;
   --pink-light: #e7d2cc;
   --blue: #3e55b9;
@@ -126,28 +125,6 @@ header #logo {
 
 nav a:hover {
   color: var(--light-grey);
-}
-
-/* ==========================================================
-    Styles welcome section on the main page
-   ==========================================================*/
-.welcome-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  grid-gap: 2rem;
-  margin-bottom: 10rem;
-}
-
-.welcome-section img {
-  width: 70%;
-}
-
-#welcome-text {
-  font-size: 2rem;
-  margin: 0 auto;
-  margin-top: 4rem;
-  width: 70%;
 }
 
 /*Sets a border around picture on Accessibility page*/

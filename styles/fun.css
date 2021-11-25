@@ -7,6 +7,25 @@ body {
     margin: 0;
 }
 
+/* ==================================================
+    Style navigation
+   ==================================================*/
+nav {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--codegreen);
+}
+
+nav a {
+   color: #111111;
+
+}
+
+a {
+    color: var(--codegreen);
+
+}
+
 section {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -14,7 +33,6 @@ section {
     width: 100%;
     min-height: 80vh;
 }
-
 
 #first {
     background-color: #111111;
@@ -61,8 +79,8 @@ section {
     width: 90%;
     grid-row-start: 3;
     grid-column-start:2;
-    position: relative;
 }
+
 figure {
     width: 50%;
 }
@@ -78,9 +96,11 @@ figure {
  
    
 }
+
 .green-text {
     color: var(--codegreen);
 }
+
 .deco-box {
     border-radius: 50%;
     width: 50%;
@@ -97,6 +117,10 @@ figure {
     grid-row-start: 4;
     grid-column-start: 1;
 }
+
+/* ==================================================
+    Style second section
+   ==================================================*/
 #second {
     background-color: #303030;
     background-image: url("img/WorldWideWeb.png");
@@ -104,38 +128,26 @@ figure {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--codegreen);
-
+    position: relative;
 }
+
 #second > .content p {
     align-self: center;
     color:  white;
-    max-width: 80ch;
     font-size: 2rem;
+    margin: 0 auto;
+    z-index: 10;
+    font-weight: normal;
+    line-height: 2.5rem;
 }
 
-#second img {
-    width: 40%;
+/*Styles pictures in the second section that overflows to the third section*/
+#second img:first-of-type {
+    width: 45%;
     position: absolute;
-    top: -65%;
-    right: -5rem;
+    right: 4rem;
+    bottom: -15%;
 }
-
-nav {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--codegreen);
-}
-
-nav a {
-   color: #111111;
-
-}
-
-a {
-    color: var(--codegreen);
-
-}
-
 
 #third {
     background-color: #111111;
@@ -143,7 +155,12 @@ a {
 }
 
 #third img {
-    width: 100%;
+    width: 70%;
+}
+
+#third .content > p {
+    margin-top: 3rem;
+    width: 50%;
 }
 
 #fourth {
@@ -162,7 +179,6 @@ a {
 
 @media screen and (max-width: 700px) {
 
-
     section {
         grid-template-columns: 20px 1fr 20px;
         grid-template-rows: 20px 20px 1fr 20px;
@@ -176,9 +192,6 @@ a {
      
     }
 
-    .turn-text {
-        display: hidden;
-    }
 
     .content figure {
         width: 90%;

@@ -46,7 +46,8 @@
         <p class="title">World Wide Web</p>
         <p class="title-hex">0x466972737420636f6d7075746572</p>
         <div class="content">
-            <img src="img/fun/earth.jpg" alt="Networks of the Earth">
+       
+            
             <p>
                 The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other 
                 web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may 
@@ -55,6 +56,9 @@
                 called a web browser, and are published by a software application called a web server. The World Wide Web 
                 is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the 
                 technologies of which the Web is built.            </p>
+        </div>
+        <div class="pics">
+            <img src="img/fun/figure.png" alt="Networks of the Earth and software developer coding">
         </div>
     </section>
     
@@ -65,9 +69,8 @@
         <div class="turn-text"><p class="date">Increased computational power over time</p></div>
 
         <div class="content">
-    
             <img src="img/graph.png" alt="A graph of the increase of computational power over time">
-        
+    
         </div>
     </section>
     <section id="fourth">
@@ -85,24 +88,27 @@
             </p>
         </div>
     </section>
-    <!--
+    
     <script>
         
         let sections = document.getElementsByTagName("section")
+
         console.log(sections);
+
+        var audio = new Audio('media/robotic-voices.wav');
+        var playing = false;
 
         document.addEventListener('scroll', (e) => {
 
-            console.log("scrolling...");
-            for(let section of sections) {
-
-                if(section.id = "second") {
-                    console.log(section.offsetTop);
-                }
+            if(!playing) {
+                audio.play();
+                playing = true;
             }
+       
+        
         })
 
     </script>
--->
+
 </body>
 </html>

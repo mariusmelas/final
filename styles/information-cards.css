@@ -10,22 +10,22 @@
     font-weight: 500;
     font-size: 2rem;
 }
-
+/* ==========================================================
+    Styles welcome section on the main page
+   ==========================================================*/
 #welcome-text {
     font-size: 2rem;
     line-height: 3rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     width: 80%;
 }
   
-
-
 .welcome-section {
     align-items: center;
     display: flex;
     flex-direction: column;
     grid-gap: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 0;
 }
 
 .welcome-section img {
