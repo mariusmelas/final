@@ -72,8 +72,8 @@ section {
 
 .content {
     display: flex;
-    /*padding: 5rem;*/
-    justify-self: start;
+    grid-gap: 1rem;
+    justify-self: center;
     align-self: center;
     width: 90%;
     grid-row-start: 3;
@@ -92,6 +92,10 @@ figure {
 
 .content img {
     width: 100%;
+}
+
+.content > * {
+    margin: 0 auto;
 }
 
 .green-text {
