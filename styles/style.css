@@ -148,9 +148,16 @@ nav a:hover {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
   /*Changes navigation bar to be displayed in a single column*/
   header {
     background-color: transparent;

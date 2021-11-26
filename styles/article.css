@@ -2,12 +2,9 @@
     Styles main content of pages
    ===========================================================*/
 .text-article {
-
-    
     max-width: 46rem;
     margin: 0 auto 5rem;
     width: 95%;
-    
 }
 
 .text-article img{
@@ -75,7 +72,7 @@ blockquote::before {
     margin-bottom: 4rem;
 }
 
-.text-article  figure {
+.text-article figure {
     align-self: center;
     margin-inline-start: 0;
     margin-inline-end: 0;    
@@ -83,8 +80,8 @@ blockquote::before {
 
 .text-article figure > img {
     align-self: flex-start;
-    width: 100%;
     margin-bottom: 0;
+    width: 100%;
 }
 
 #essay-figure {

@@ -2,14 +2,7 @@
     --pink: #dbbdb3;
     --pink-light: #e7d2cc;
 }
-.our-courses-section {
-    width: 70%;
-}
-  
-#our-courses-title{
-    font-weight: 500;
-    font-size: 2rem;
-}
+
 /* ==========================================================
     Styles welcome section on the main page
    ==========================================================*/
@@ -32,13 +25,19 @@
     width: 70%;
 }
 
-
-
-/*
-
-    Grid på framside med Preview av text
-
-*/
+/* ==========================================================
+    Styles "About our assignment" section on the main page
+   ==========================================================*/
+.our-courses-section {
+    width: 70%;
+}
+  
+#our-courses-title{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
 
 .information-cards-container {
     display: grid;
@@ -62,11 +61,6 @@
     position: relative;
 }
 
-#our-courses-title {
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
 .information-card > svg {
     align-self: center;
     background-color:#393E46;
@@ -81,7 +75,6 @@
 .information-card > p {
     color: #393E46;
     font-size: 1rem;
-
 }
 
 .information-card > h3 {
