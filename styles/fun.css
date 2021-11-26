@@ -152,6 +152,7 @@ figure {
 }
 
 #third img {
+    margin: 0 auto;
     width: 70%;
 }
 
@@ -180,6 +181,7 @@ figure {
 
 #fourth img {
     opacity: 0.5;
+    margin: 0 auto;
 }
 
 #fourth video {
