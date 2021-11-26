@@ -49,13 +49,7 @@ section {
     width: 100%;
 }
 
-#first {
-    background-color: #111111;
-    color: var(--codegreen);
-    justify-content: center;
-}
-
-
+/*Styles text on the left side of each sections*/
 .turn-text {
     align-self: center;
     font-size: 17px;
@@ -66,6 +60,7 @@ section {
     writing-mode: vertical-rl;
 }
 
+/*Styles the titles*/
 .title {
     color: var(--codegreen);
     font-size: 2rem;
@@ -95,11 +90,9 @@ section {
     justify-self: center;
     width: 90%;
 }
-
-figure {
-    width: 50%;
-}
-
+ 
+/*  Styles the content of each sections
+   ==================================================*/
 .content p {
     color: lightgrey;
     font-size: 1.2rem;
@@ -114,10 +107,7 @@ figure {
     margin: 0 auto;
 }
 
-.green-text {
-    color: var(--codegreen);
-}
-
+/*Styles the circles at the top-right and bottom-left corners*/
 .deco-box {
     border-radius: 50%;
     width: 50%;
@@ -133,6 +123,24 @@ figure {
 
     grid-row-start: 4;
     grid-column-start: 1;
+}
+
+/* ==================================================
+    Styles first section
+   ==================================================*/
+#first {
+    background-color: #111111;
+    color: var(--codegreen);
+    justify-content: center;
+}
+
+/*Styles picture and caption on first section*/
+figure {
+    width: 50%;
+}
+
+.green-text {
+    color: var(--codegreen);
 }
 
 /* ==================================================
@@ -166,6 +174,9 @@ figure {
     bottom: -15%;
 }
 
+/* ==================================================
+    Styles third section
+   ==================================================*/
 #third {
     background-color: #111111;
     color: var(--codegreen);
@@ -181,6 +192,9 @@ figure {
     width: 50%;
 }
 
+/* ==================================================
+    Styles fourth section
+   ==================================================*/
 #fourth {
     background-color: #202020;
     color: var(--codegreen);
@@ -188,7 +202,7 @@ figure {
     align-items: center;
 }
 
-#fourth .content {
+#fourth .content, .title-hex {
     flex-direction: column;
     z-index: 1;
 }
@@ -237,6 +251,7 @@ figure {
 
     #second > .content p {
         font-size: 1.2rem;
+        line-height: 1.5rem;
         max-width: 100%;
     }
     
@@ -244,6 +259,10 @@ figure {
         bottom: -10%;
         right: 2.5rem;
         width: 75%;
+    }
+
+    .turn-text,.title-hex {
+        font-size: 12px;
     }
 }
   
